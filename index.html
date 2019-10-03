@@ -16,13 +16,19 @@
     <nav>
       <div class="nav-wrapper black">
         <a href="#" class="brand-logo">Brandon Ngwenya</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="#">Skills</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
     <div class="parallax-container">
       <div class="parallax"><img src="img/parallax.jpg">
       </div>
@@ -34,36 +40,36 @@
   <main>
     <h1 style="text-align: center">SKILLS</h1>
     <div class="row">
-      <div class="carousel carousel-slider center col s4 offset-s4">
-        <div class="carousel-fixed-item center">
+      <div class="carousel carousel-slider center col s6 offset-s3">
+        <!-- <div class="carousel-fixed-item center">
           <a class="btn waves-effect white grey-text darken-text-2">SKILLS</a>
-        </div>
+        </div> -->
         <div class="carousel-item white black-text" href="#one!">
           <h2>Angular</h2>
-          <div class="col s4 offset-s4">
+          <div class="col s12">
             <div class="ldBar label-center" id="Angular" data-preset="circle" data-value="35"
-              style="width:200px;height:200px"></div>
+              style="position: absolute; width:80%; height: 80%; left: 10%;"></div>
           </div>
         </div>
         <div class="carousel-item white black-text" href="#two!">
           <h2>Java</h2>
-          <div class="col s4 offset-s4">
+          <div class="col s12 ">
             <div data-preset="circle" class="ldBar label-center" id="Java" data-value="35" data-pattern-size="90"
-              style="width:200px;height:200px"></div>
+              style="position: absolute; width:80%; height: 80%; left: 10%;"></div>
           </div>
         </div>
         <div class="carousel-item white black-text" href="#three!">
           <h2>Node</h2>
-          <div class="col s4 offset-s4">
+          <div class="col s12 ">
             <div class="ldBar label-center" id="Node" data-preset="circle" data-value="35"
-              style="width:200px;height:200px"></div>
+              style="position: absolute; width:80%; height: 80%; left: 10%;"></div>
           </div>
         </div>
         <div class="carousel-item white black-text" href="#four!">
           <h2>ASP .Net</h2>
-          <div class="col s4 offset-s4">
+          <div class="col s12 ">
             <div class="ldBar label-center" id="ASP" data-preset="circle" data-value="35"
-              style="width:200px;height:200px"></div>
+              style="position: absolute; width:80%; height: 80%; left: 10%;"></div>
           </div>
         </div>
       </div>
@@ -93,7 +99,7 @@
     <div class="container">
       <div class="row">
         <div>
-          <h5 class="white-text">Footer Content</h5>
+          <h5 class="white-text">Contact Me</h5>
         </div>
         <div class="col s4">
           <a href="http://www.linkedin.com/in/bngweny" alt="linkedin"><img
@@ -104,7 +110,8 @@
               src="https://img.icons8.com/dusk/64/000000/github.png"></a>
         </div>
         <div class="col s4">
-          <a href="mailto:bngweny@student.wethinkcode.co.za" href="email"><img src="https://img.icons8.com/dusk/64/000000/gmail.png"></a>
+          <a href="mailto:bngweny@student.wethinkcode.co.za" href="email"><img
+              src="https://img.icons8.com/dusk/64/000000/gmail.png"></a>
         </div>
       </div>
     </div>
@@ -126,6 +133,7 @@
   <script>
     $(document).ready(function () {
       $('.parallax').parallax();
+      $('.sidenav').sidenav();
     });
 
     $(document).ready(function () {
