@@ -18,16 +18,16 @@
         <a href="#" class="brand-logo">Brandon Ngwenya</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="parallax-container">
       <div class="parallax"><img src="img/parallax.jpg">
@@ -39,7 +39,7 @@
   <!-- </div> -->
   <main>
     <h1 style="text-align: center">SKILLS</h1>
-    <div class="row">
+    <div class="row" id="skills">
       <div class="carousel carousel-slider center col s6 offset-s3">
         <!-- <div class="carousel-fixed-item center">
           <a class="btn waves-effect white grey-text darken-text-2">SKILLS</a>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" id="about">
       <h3 class="center">About</h3>
       <div class="row">
         <div class="col s6 offset-s3">
@@ -96,7 +96,7 @@
     </div>
   </main>
   <footer class="page-footer black">
-    <div class="container">
+    <div class="container" id="contact">
       <div class="row">
         <div>
           <h5 class="white-text">Contact Me</h5>
@@ -134,6 +134,7 @@
     $(document).ready(function () {
       $('.parallax').parallax();
       $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
     });
 
     $(document).ready(function () {
