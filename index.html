@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>Brandon Ngwenya portfolio</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -75,7 +76,7 @@
       </div>
     </div>
     <div class="section" id="about">
-      <h3 class="center">About</h3>
+      <h3 class="center">ABOUT</h3>
       <div class="row">
         <div class="col s6 offset-s3">
           <div class="card-panel teal">
@@ -84,7 +85,8 @@
               style="height: 190px; vertical-align: middle; border-radius: 60%; align-content: center">
             </div>
             <br /> -->
-            <span class="white-text">I am a young, open minded and goal oriented individual with a passion for
+            <h4 class="center">Bio</h4>
+            <span class="white-text flow-text">I am a young, open minded and goal oriented individual with a passion for
               problem solving. I believe that learning is a continuous process and is
               important for growth. I would to think of myself as a team player and I am
               not afraid of a challenge. I have a strong foundation in data structures and
@@ -93,7 +95,33 @@
           </div>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col s6 offset-s3">
+          <div class="card-panel cyan">
+            <h4 class="center">Education</h4>
+            <span class="white-text flow-text">
+              <div class="center black-text">Software Engineering | 2nd Year 2019 | WeThinkCode_</div><br>
+              Peer-to-peer & project-based Software Engineering Course<br>
+              Modules Completed: C (POSIX), Algorithms, Data Structures, PHP & micro-frameworks, Web(MEAN stack), Java,
+              Security and Dev-ops
+              <br>
+              <br>
+              <div class="center black-text">BSc: Computer Science | 3rd Year 2018 | UWC</div><br>
+              Modules Completed: Computer Science, Information Systems, Mathematics and Statistics
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col s6 offset-s3">
+            <div class="card-panel blue-grey">
+              <h4 class="center">Additional</h4>
+              <span class="white-text flow-text">
+                    Check out my projects in the github link below
+              </span>
+            </div>
+          </div>
+      </div>
   </main>
   <footer class="page-footer black">
     <div class="container" id="contact">
@@ -106,11 +134,11 @@
               src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"></a>
         </div>
         <div class="col s4">
-          <a href="http://www.github.com/bngweny" alr="github"><img
+          <a href="http://www.github.com/bngweny" alt="github"><img
               src="https://img.icons8.com/dusk/64/000000/github.png"></a>
         </div>
         <div class="col s4">
-          <a href="mailto:bngweny@student.wethinkcode.co.za" href="email"><img
+          <a href="mailto:bngweny@student.wethinkcode.co.za" alt="email"><img
               src="https://img.icons8.com/dusk/64/000000/gmail.png"></a>
         </div>
       </div>
@@ -135,6 +163,9 @@
       $('.parallax').parallax();
       $('.sidenav').sidenav();
       $('.scrollspy').scrollSpy();
+      $('.sidenav li').click(() => {
+        $('.sidenav').sidenav('close');
+      })
     });
 
     $(document).ready(function () {
