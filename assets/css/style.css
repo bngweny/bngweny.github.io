@@ -426,11 +426,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-/* @media screen and (max-width: 1253px) {
+ @media screen and (max-width: 1253px) {
   #hero {
+    background: url("../img/front3portrait.jpg") top center;
     background-size: cover;
   }
-} */
+}
 
 #hero:before {
   content: "";
