@@ -107,8 +107,8 @@ $(document).ready(function() {
      * Google Map
      */
     if ( $('#googleMap').length ) {
-        var mapProp = {
-            center: new google.maps.LatLng(41.878114, -87.629798),
+        var mapProp = {//-22.904375272841655, 30.557201438155985
+            center: new google.maps.LatLng(-22.904375272841655, 30.557201438155985),
             zoom:9,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
